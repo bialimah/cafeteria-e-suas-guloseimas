@@ -1,95 +1,114 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Estilo geral */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
 header {
-    background-color: #e76f51;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
+  background-color: #FF6347;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2rem;
+  font-size: 3rem;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+nav ul {
+  list-style: none;
+  margin-top: 10px;
 }
 
-header nav ul li {
-    margin: 0 1rem;
+nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Seção Sobre */
+.sobre {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    color: #e76f51;
-    border-bottom: 2px solid #e76f51;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+.sobre h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #FF6347;
+  margin-bottom: 20px;
 }
 
-.menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+.sobre p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 
-.item {
-    text-align: center;
-    background-color: #f4a261;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: white;
+/* Cardápio */
+.cardapio {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.item img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
+.cardapio h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #FF6347;
+  margin-bottom: 30px;
 }
 
-.item h3 {
-    margin: 0.5rem 0;
+.categoria {
+  margin-bottom: 30px;
 }
 
+.categoria h3 {
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 2px solid #FF6347;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.categoria ul {
+  list-style: none;
+}
+
+.categoria ul li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Rodapé */
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #264653;
-    color: white;
-    margin-top: 2rem;
-}
-
-footer p {
-    margin: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: #FF6347;
+  color: #fff;
+  margin-top: 30px;
 }
