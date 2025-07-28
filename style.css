@@ -8,7 +8,7 @@
 /* Estilo geral */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
   padding: 0 20px;
@@ -95,13 +95,33 @@ nav ul li a:hover {
   margin-bottom: 15px;
 }
 
-.categoria ul {
-  list-style: none;
+/* Estilo dos itens do cardápio */
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.categoria ul li {
+.item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.descricao {
+  flex: 1;
+}
+
+.descricao h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.descricao p {
   font-size: 1.2rem;
-  margin-bottom: 5px;
+  color: #555;
 }
 
 /* Rodapé */
@@ -112,3 +132,4 @@ footer {
   color: #fff;
   margin-top: 30px;
 }
+
